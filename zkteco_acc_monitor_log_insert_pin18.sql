@@ -526,3 +526,11 @@ VALUES
  4, 0, 1000, '',
  0, 4, 'CPU1 Staff IN/OUT'
 );
+
+
+SELECT *
+FROM acc_monitor_log
+WHERE [pin] = '18'
+AND [card_no] = '4461809'
+AND [time] BETWEEN #10/14/2025 00:00:00# AND #10/14/2025 11:59:59 PM#
+ORDER BY [time];
