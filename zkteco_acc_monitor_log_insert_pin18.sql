@@ -461,3 +461,68 @@ WHERE [pin] = '18'
 AND [card_no] = '4461809'
 AND [time] BETWEEN #09/24/2025 00:00:00# AND #02/26/2026 11:59:59 PM#
 ORDER BY [time];
+
+
+
+
+
+INSERT INTO acc_monitor_log
+(
+ [status], [log_tag], [time], [pin], [card_no],
+ [device_id], [device_sn], [device_name],
+ [verified], [state], [event_type], [description],
+ [event_point_type], [event_point_id], [event_point_name]
+)
+VALUES
+(
+ 0, 0, #10/14/2025 08:35:00 AM#, '18', '4461809',
+ 5, 'CM7N222660217', '192.168.0.208',
+ 4, 1, 1000, '',
+ 0, 4, 'CPU1 Staff IN/OUT'
+);
+
+
+INSERT INTO acc_monitor_log
+(
+ [status], [log_tag], [time], [pin], [card_no],
+ [device_id], [device_sn], [device_name],
+ [verified], [state], [event_type], [description],
+ [event_point_type], [event_point_id], [event_point_name]
+)
+VALUES
+(
+ 0, 0, #10/14/2025 08:39:00 AM#, '18', '4461809',
+ 5, 'CM7N222660217', '192.168.0.208',
+ 4, 1, 1000, '',
+ 0, 4, 'CPU1 Staff IN/OUT'
+);
+
+INSERT INTO acc_monitor_log
+(
+ [status], [log_tag], [time], [pin], [card_no],
+ [device_id], [device_sn], [device_name],
+ [verified], [state], [event_type], [description],
+ [event_point_type], [event_point_id], [event_point_name]
+)
+VALUES
+(
+ 0, 0, #10/14/2025 08:50:00 AM#, '18', '4461809',
+ 3, 'CM7N222660179', '192.168.0.205',
+ 4, 0, 1000, '',
+ 0, 2, 'CPU2 Staff IN/OUT'
+);
+
+INSERT INTO acc_monitor_log
+(
+ [status], [log_tag], [time], [pin], [card_no],
+ [device_id], [device_sn], [device_name],
+ [verified], [state], [event_type], [description],
+ [event_point_type], [event_point_id], [event_point_name]
+)
+VALUES
+(
+ 0, 0, #10/14/2025 08:58:00 AM#, '18', '4461809',
+ 5, 'CM7N222660217', '192.168.0.208',
+ 4, 0, 1000, '',
+ 0, 4, 'CPU1 Staff IN/OUT'
+);
